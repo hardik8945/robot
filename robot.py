@@ -44,17 +44,17 @@ NOTE: Import math library and use the sqrt() function of the math library to com
 '''
 import math
 n=int(input())
-i=0
+i=1
 direction=[]
-x=1
-y=1
+x=0
+y=0
 steps=[]
 while i<=n:
   a,b=input().split()
   direction.append(a)
   steps.append(b)
-  i+=2
-for i in range(n+2):
+  i+=1
+for i in range(n):
   if direction[i]=='LEFT':
     x=x-int(steps[i])
   if direction[i]=='RIGHT':
